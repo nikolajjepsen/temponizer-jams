@@ -5,5 +5,5 @@ export default defineConfig({
     build: {
         target: 'esnext'
     },
-    base: "/temponizer-jams/",
+    base: "",
 })
