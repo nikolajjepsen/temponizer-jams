@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+</head>
+<body>
+    <header>
+        <h1>Temponizer Jam</h1>
+        <h2 id="authenticated" style="display:none;">
+            <span id="displayName">[unknown]</span>
+            <button id="logout">Logout</button>
+        </h2>
+
+        <h2 id="unauthenticated">
+            <button id="login">Authenticate</button>
+        </h2>
+    </header>
+
+    <section id="player" style="display:none;">
+        <div id="current">
+            <ul id="currentTrack">
+                <li>
+                    <h3 id="currentTrackName"></h3>
+                    <p id="currentTrackArtist"></p>
+                </li>
+            </ul>
+        </div>
+
+        <div id="previous">
+            <div id="header">
+                <div style="display:flex;align-items:center;">
+                    <h2 style="display:inline-block;">Previous Tracks</h2>
+                    <button id="resetPreviousTracks">Reset</button>
+                </div>
+                <div style="display:flex;align-items:center;">
+                    <select id="playlists"></select>
+                    <button id="synchronizePlaylist">Synkronisér</button>
+                </div>
+            </div>
+            <ul id="previousTracks"></ul>
+        </div>
+    </section>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
