@@ -46,7 +46,7 @@ if (hasAccessToken()) {
 
 document.querySelector('#logout').addEventListener('click', () => {
     localStorage.clear();
-    window.location.href = window.location.origin;
+    window.location.href = 'https://nikolajjepsen.github.io/temponizer-jams/';
 });
 
 document.querySelector('#login').addEventListener('click', () => {
